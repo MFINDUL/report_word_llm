@@ -1,82 +1,77 @@
 # 📄 AI 보고서 자동 생성기
 
-Python을 활용하여 Word 문서를 자동으로 생성하는 도구 모음입니다.
+Python과 LLM을 활용하여 Word 문서를 자동으로 생성하는 도구입니다.
 
 ## 🚀 주요 기능
 
-- **자동 Word 문서 생성**: Python을 통한 전문적인 보고서 작성
-- **LLM 통합**: OpenAI API와 LM Studio를 활용한 지능형 문서 생성
-- **템플릿 시스템**: 다양한 보고서 양식을 미리 정의하여 재사용 가능
-- **학습 결과 시각화**: 머신러닝 모델의 학습 곡선과 성능 지표 자동 포함
+- **Jupyter Notebook 기반**: 대화형 환경에서 Word 문서 생성 학습 및 실험
+- **Python-docx 라이브러리**: 전문적인 Word 문서 프로그래밍 방식 작성
+- **실용적 예제**: 테이블, 이미지, 서식 등 다양한 Word 기능 구현
+- **학습 친화적**: 단계별로 Word 문서 생성 방법 학습 가능
 
-## 📋 포함된 도구들
+## 📋 현재 포함된 파일들
 
-### 1. `word_with_summary.py`
-- CNN 학습 결과를 종합한 상세 보고서 생성
-- 요약(Executive Summary) 섹션 포함
-- 학습 곡선 및 Confusion Matrix 자동 삽입
-- PDF 변환 기능 내장
+### 1. `learn_word.ipynb`
+- **메인 학습 노트북**: Python-docx 라이브러리 사용법 전반
+- **단계별 예제**: 기본 텍스트부터 복잡한 서식까지
+- **실무 적용**: 테이블 생성, 이미지 삽입, 서식 적용
+- **대화형 학습**: 코드 실행 결과를 즉시 확인 가능
 
-### 2. `make_word.py`
-- 기본적인 Word 문서 생성 도구
-- 간단한 보고서 템플릿 제공
-
-### 3. `generate_training_curves.py`
-- 머신러닝 학습 결과 시각화
-- 정확도 및 손실 곡선 자동 생성
+### 2. `image/` 폴더
+- 노트북에서 사용되는 **예시 이미지들**
+- 실제 문서 생성 시 삽입할 **스크린샷 및 도표**
+- **다양한 이미지 포맷** 지원 예제
 
 ## 🛠️ 설치 및 사용법
 
 ### 필요한 라이브러리 설치
 ```bash
-pip install python-docx docx2pdf langchain-openai python-dotenv
-```
-
-### 환경 변수 설정
-`.env` 파일을 생성하고 다음 내용을 추가하세요:
-```
-LMSTUDIO=http://localhost:1234/v1
-OPENAI_API_KEY=your_api_key_here
-OPENAI_MODEL=gpt-3.5-turbo
+pip install python-docx jupyter
+# 추가로 필요한 경우
+pip install python-dotenv pillow
 ```
 
 ### 실행 방법
 ```bash
-python word_with_summary.py
+jupyter notebook learn_word.ipynb
 ```
 
 ## 📁 프로젝트 구조
 
 ```
-make_report/
-├── word_with_summary.py    # 메인 보고서 생성기
-├── make_word.py           # 기본 Word 생성 도구
-├── generate_training_curves.py  # 학습 곡선 생성
-├── templates/             # 보고서 템플릿들
-├── Model/                 # 생성된 보고서 저장 폴더
-└── README.md             # 이 파일
+report_word_llm/
+├── learn_word.ipynb    # 메인 학습 노트북
+├── image/              # 예시 이미지 폴더
+│   ├── *.png          # 스크린샷 및 예제 이미지들
+│   └── ...
+└── README.md          # 이 파일
 ```
 
-## 🎯 사용 사례
+## 🎯 학습 목표
 
-- **연구 보고서**: 머신러닝/딥러닝 실험 결과 문서화
-- **프로젝트 리포트**: 기술 프로젝트 성과 보고서
-- **학습 로그 분석**: 모델 학습 과정 시각화 및 문서화
-- **업무 보고서**: 정형화된 비즈니스 문서 생성
+- **Word 문서 자동화**: 반복적인 보고서 작성 자동화
+- **Python-docx 마스터**: 라이브러리의 핵심 기능 습득
+- **실무 응용**: 실제 업무에서 활용 가능한 기법 학습
+- **효율성 향상**: 수동 작업을 프로그래밍으로 대체
 
-## 📊 생성되는 보고서 예시
+## 📚 학습 내용
 
-생성된 보고서에는 다음이 포함됩니다:
-- 📈 학습 정확도 및 손실 곡선
-- 🎯 Confusion Matrix 시각화
-- 📋 성능 지표 요약 테이블
-- 📝 상세한 실행 요약(Executive Summary)
-- 📊 에포크별 학습 진행 상황
+노트북에서 다루는 주요 내용들:
+- 📝 **기본 텍스트 작성**: 제목, 본문, 서식 적용
+- 📊 **테이블 생성**: 데이터 표현을 위한 표 작성
+- 🖼️ **이미지 삽입**: 문서에 시각적 요소 추가
+- 🎨 **고급 서식**: 폰트, 색상, 스타일 커스터마이징
+- 💾 **파일 관리**: 문서 저장 및 구조화
+
+## 🔗 참고 자료
+
+- [Python-docx 공식 문서](https://python-docx.readthedocs.io/)
+- [GitHub Repository](https://github.com/MFINDUL/report_word_llm/)
 
 ## 🤝 기여하기
 
-이 프로젝트는 지속적으로 개선되고 있습니다. 새로운 템플릿이나 기능 추가에 대한 아이디어가 있으시면 언제든 기여해주세요!
+이 프로젝트는 Word 문서 자동화 학습을 목적으로 합니다. 새로운 예제나 개선사항이 있으시면 언제든 기여해주세요!
 
 ## 📄 라이선스
 
-이 프로젝트는 MIT 라이선스를 따릅니다.
+이 프로젝트는 학습 목적으로 제공됩니다.
