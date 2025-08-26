@@ -1,23 +1,25 @@
-# 📄 AI 보고서 자동 생성기
+# 📄 보고서 자동화 프로젝트 
 
-Python과 LLM을 활용하여 Word 문서를 자동으로 생성하는 도구입니다.
+Python과 LLM을 활용하여 Word 문서를 자동으로 생성하는 도구 구축이 목표입니다. 하지만 word로 변환하는 파이썬 코드를 만드려는 목적이 큽니다. RAG를 위해
 
 ## 🚀 주요 기능
 
 - **Jupyter Notebook 기반**: 대화형 환경에서 Word 문서 생성 학습 및 실험
 - **Python-docx 라이브러리**: 전문적인 Word 문서 프로그래밍 방식 작성
-- **실용적 예제**: 테이블, 이미지, 서식 등 다양한 Word 기능 구현
+- **실용할 수 있는 코드**: 테이블, 이미지, 서식 등 다양한 Word 기능 구현
 - **학습 친화적**: 단계별로 Word 문서 생성 방법 학습 가능
 
 ## 📋 현재 포함된 파일들
 
 ### 1. `learn_word.ipynb`
+
 - **메인 학습 노트북**: Python-docx 라이브러리 사용법 전반
 - **단계별 예제**: 기본 텍스트부터 복잡한 서식까지
 - **실무 적용**: 테이블 생성, 이미지 삽입, 서식 적용
 - **대화형 학습**: 코드 실행 결과를 즉시 확인 가능
 
 ### 2. `image/` 폴더
+
 - 노트북에서 사용되는 **예시 이미지들**
 - 실제 문서 생성 시 삽입할 **스크린샷 및 도표**
 - **다양한 이미지 포맷** 지원 예제
@@ -25,6 +27,7 @@ Python과 LLM을 활용하여 Word 문서를 자동으로 생성하는 도구입
 ## 🛠️ 설치 및 사용법
 
 ### 필요한 라이브러리 설치
+
 ```bash
 pip install python-docx jupyter
 # 추가로 필요한 경우
@@ -32,6 +35,7 @@ pip install python-dotenv pillow
 ```
 
 ### 실행 방법
+
 ```bash
 jupyter notebook learn_word.ipynb
 ```
@@ -57,6 +61,7 @@ report_word_llm/
 ## 📚 학습 내용
 
 노트북에서 다루는 주요 내용들:
+
 - 📝 **기본 텍스트 작성**: 제목, 본문, 서식 적용
 - 📊 **테이블 생성**: 데이터 표현을 위한 표 작성
 - 🖼️ **이미지 삽입**: 문서에 시각적 요소 추가
@@ -66,7 +71,6 @@ report_word_llm/
 ## 🔗 참고 자료
 
 - [Python-docx 공식 문서](https://python-docx.readthedocs.io/)
-- [GitHub Repository](https://github.com/MFINDUL/report_word_llm/)
 
 ## 🤝 기여하기
 
