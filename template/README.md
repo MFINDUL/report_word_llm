@@ -7,10 +7,11 @@
 ## 파일 구조
 
 ```
-template/
-├── README.md                    # 이 파일
-├── code/
-│   └── report.py               # 보고서 생성 코드
+make_report/
+├── template/
+│   ├── README.md               # 이 파일
+│   └── code/
+│       └── report.py           # 보고서 생성 코드
 └── image/                      # 예시 이미지들
     ├── Cursor_6MnMx69wWR.png
     ├── Cursor_3yPrL9z45P.png
@@ -57,7 +58,7 @@ right_cell.paragraphs[0].add_run().add_picture(r'image\mul2.png', width=Cm(8))
 doc.save('tutorial_report.docx')
 ```
 
-![기본 보고서 예시](image/Cursor_6MnMx69wWR.png)
+![기본 보고서 예시](../image/Cursor_6MnMx69wWR.png)
 
 ### 2. 데이터 분석 보고서
 
@@ -94,7 +95,7 @@ chart_para.add_run().add_picture(img_buffer, width=Cm(12))
 doc.save('data_analysis_report.docx')
 ```
 
-![데이터 분석 보고서 예시](image/Cursor_3yPrL9z45P.png)
+![데이터 분석 보고서 예시](../image/Cursor_3yPrL9z45P.png)
 
 ### 3. 프로젝트 진행 보고서
 
@@ -138,7 +139,7 @@ for task in tasks:
 doc.save('project_progress_report.docx')
 ```
 
-![프로젝트 진행 보고서 예시](image/Cursor_azrBa7z9ZQ.png)
+![프로젝트 진행 보고서 예시](../image/Cursor_azrBa7z9ZQ.png)
 
 ### 4. 실험 결과 보고서
 
@@ -184,7 +185,7 @@ result_para.add_run().add_picture(img_buffer, width=Cm(12))
 doc.save('experiment_result_report.docx')
 ```
 
-![실험 결과 보고서 예시](image/Cursor_cEi6qlPj9A.png)
+![실험 결과 보고서 예시](../image/Cursor_cEi6qlPj9A.png)
 
 ## 필요한 라이브러리
 
