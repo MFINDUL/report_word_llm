@@ -27,11 +27,11 @@ make_report/
 
 ![기본 보고서 예시](../image/Cursor_6MnMx69wWR.png)
 
-### 2. 데이터 분석 보고서
+### 2. 튜토리얼 보고서 - 디자인 추가, 회사 로고, 작성일 
 
-matplotlib 차트를 포함한 데이터 분석 보고서
+회사 로고 등 를 포함한 보고서
 
-**코드 파일**: `code/data_analysis_report.py`
+**코드 파일**: `code/report_logo.py`
 
 ![데이터 분석 보고서 예시](../image/Cursor_3yPrL9z45P.png)
 
